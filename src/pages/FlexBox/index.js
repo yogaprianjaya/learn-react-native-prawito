@@ -2,7 +2,33 @@ import React, { Component } from 'react';
 import { Image, Text, View } from 'react-native';
 
 class FlexBox extends Component {
+    constructor(props) {
+        super(props);
+        console.log("===> constructor");
+        this.state = {
+            subscriber: 200,
+        }
+    }
+
+    componentDidMount() {
+        console.log("===> component Did Mount");
+        setTimeout(() => {
+            this.setState({
+                subscriber: 400,
+            })
+        }, 2000);
+    }
+
+    componentDidUpdate() {
+        console.log("===> component Did Update");
+    }
+
+    componentWillUnmount() {
+        console.log("===> component Will Unmount");
+    }
+
     render() {
+        console.log("===> render");
         return (
             <View>
                 <View style={{flexDirection: 'row', backgroundColor: 'gray', alignItems: 'center'}}>
@@ -20,7 +46,7 @@ class FlexBox extends Component {
                     <Image source={{uri: 'https://yt3.ggpht.com/ytc/AKedOLRexzNqKp2lRPNUmvq0_xOUu8oxf-z5LjSxi2lOPlc=s88-c-k-c0x00ffffff-no-rj'}} style={{width: 100, height: 100, borderRadius: 50}} />
                     <View style={{marginLeft: 14}}>
                         <Text style={{fontSize: 20, fontWeight: 'bold'}}>Prawito Hudoro</Text>
-                        <Text>100K Subscriber</Text>
+                        <Text>{this.state.subscriber} Subscriber</Text>
                     </View>
                 </View>
             </View>
