@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
-import headphone from './headphone.jpg'
+import headphone from '../../assets/images/headphone.jpg';
 
-const PositionReactNative = () => {
+const Position = () => {
     return (
         <View style={style.wrapper}>
             <Text style={{marginBottom: 10}}>Materi Position</Text>
@@ -15,7 +15,7 @@ const PositionReactNative = () => {
     )
 }
 
-export default PositionReactNative;
+export default Position;
 
 const style = StyleSheet.create({
     image: {width: 50, height: 50, borderRadius: 25},
