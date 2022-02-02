@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {View, ScrollView} from 'react-native';
 import FlexBox from './pages/FlexBox';
 import Position from './pages/Position';
+import PropsDinamis from './pages/PropsDinamis';
 import SampleComponent from './pages/SampleComponent';
 import StylingComponent from './pages/StylingComponent';
 
@@ -17,7 +18,8 @@ const App = () => {
       <ScrollView>
         {/* <SampleComponent /> */}
         {/* <StylingComponent /> */}
-        {isShow && <FlexBox />}
+        {/* {isShow && <FlexBox />} */}
+        <PropsDinamis />
         {/* <Position /> */}
       </ScrollView>
     </View>
