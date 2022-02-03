@@ -1,21 +1,20 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Image, Text, StyleSheet } from "react-native";
 import headphone from '../../assets/images/headphone.jpg';
 
-const Position = () => {
+const Cart = (props) => {
     return (
-        <View style={style.wrapper}>
-            <Text style={{marginBottom: 10}}>Materi Position</Text>
+        <View>
             <View style={style.cardWrapper}>
                 <Image source={headphone} style={style.image} />
-                <Text style={style.notif}>10</Text>
+                <Text style={style.notif}>{props.total}</Text>
             </View>
             <Text style={style.text}>Keranjang Belanja Anda</Text>
         </View>
     )
 }
 
-export default Position;
+export default Cart;
 
 const style = StyleSheet.create({
     image: {width: 50, height: 50, borderRadius: 25},
