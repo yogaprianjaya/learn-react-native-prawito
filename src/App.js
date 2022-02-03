@@ -5,6 +5,7 @@ import Communication from './pages/Communication';
 import FlexBox from './pages/FlexBox';
 import Position from './pages/Position';
 import PropsDinamis from './pages/PropsDinamis';
+import ReactNativeSVG from './pages/ReactNativeSVG';
 import SampleComponent from './pages/SampleComponent';
 import StateDinamis from './pages/StateDinamis';
 import StylingComponent from './pages/StylingComponent';
@@ -26,7 +27,8 @@ const App = () => {
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
         {/* <Communication /> */}
-        <BasicJavaScript />
+        {/* <BasicJavaScript /> */}
+        <ReactNativeSVG />
       </ScrollView>
     </View>
   );
