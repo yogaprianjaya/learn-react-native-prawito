@@ -45,7 +45,7 @@ const BasicJavaScript = () => {
             <Text>Nama : {nama}</Text>
             <Text>{sapaHewan(hewan)}</Text>
             {namaOranga.map((orang) => (
-                <Text>{orang}</Text>
+                <Text key={orang}>{orang}</Text>
             ))}
         </View>
     )
