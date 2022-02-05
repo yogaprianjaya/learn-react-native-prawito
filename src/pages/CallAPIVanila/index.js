@@ -40,7 +40,7 @@ const CallAPIVanila = () => {
     }
 
     return (
-        <View style={style.wrapper}>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text style={style.textTitle}>Get API Vanila JS</Text>
             <Button title="Get Data" onPress={getData} />
             <Text style={{textAlign: 'center', marginTop: 10}} >Respone Get Data</Text>
@@ -54,7 +54,6 @@ const CallAPIVanila = () => {
 export default CallAPIVanila;
 
 const style = StyleSheet.create({
-    wrapper: {padding: 20},
     textTitle: {textAlign: 'center', marginBottom: 20},
     line: {height: 2, backgroundColor: 'black'}
 })

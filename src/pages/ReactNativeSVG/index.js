@@ -4,7 +4,7 @@ import Illustrations from '../../assets/images/illustrations.svg'
 
 const ReactNativeSVG = () => {
     return (
-        <View style={style.wrapper}>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text style={style.textTitle}>Menampilkan SVG</Text>
             <Illustrations width={244} height={125} />
         </View>
@@ -14,6 +14,5 @@ const ReactNativeSVG = () => {
 export default ReactNativeSVG;
 
 const style = StyleSheet.create({
-    wrapper: {padding: 20},
     textTitle: {textAlign: 'center'}
 });

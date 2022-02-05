@@ -21,15 +21,15 @@ const App = () => {
   return (
     <View>
       <ScrollView>
-        {/* <SampleComponent /> */}
-        {/* <StylingComponent /> */}
-        {/* {isShow && <FlexBox />} */}
-        {/* <Position /> */}
-        {/* <PropsDinamis /> */}
-        {/* <StateDinamis /> */}
-        {/* <Communication /> */}
-        {/* <BasicJavaScript /> */}
-        {/* <ReactNativeSVG /> */}
+        <SampleComponent />
+        <StylingComponent />
+        <FlexBox />
+        <Position />
+        <PropsDinamis />
+        <StateDinamis />
+        <Communication />
+        <BasicJavaScript />
+        <ReactNativeSVG />
         <CallAPIVanila />
       </ScrollView>
     </View>

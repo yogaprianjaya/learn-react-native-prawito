@@ -12,7 +12,7 @@ const Story = props => {
 
 const PropsDinamis = () => {
     return (
-        <View>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text>Props Dinamis</Text>
             <ScrollView horizontal>
                 <View style={{flexDirection: 'row'}}>

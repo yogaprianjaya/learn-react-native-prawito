@@ -27,7 +27,7 @@ class CounterClass extends Component {
 
 const StateDinamis = () => {
     return (
-        <View style={style.wrapper}>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text style={style.textTitle}>State Dinamis</Text>
             <Text style={{textAlign: 'center', marginTop: 20}}>Function Component (Hooks)</Text>
             <Counter />
@@ -42,6 +42,5 @@ const StateDinamis = () => {
 export default StateDinamis;
 
 const style = StyleSheet.create({
-    wrapper: {padding: 20},
     textTitle: {textAlign: 'center'},
 })

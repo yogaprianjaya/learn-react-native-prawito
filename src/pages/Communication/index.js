@@ -6,7 +6,7 @@ import Product from "../../components/Product";
 const Communication = () => {
     const [total, setTotal] = useState(0);
     return (
-        <View style={style.wrapper}>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text style={style.textTitle}>Komunikasi antar komponen</Text>
             <Cart total={total} />
             <Product buttonPress={() => setTotal(total + 1)}/>
@@ -17,6 +17,5 @@ const Communication = () => {
 export default Communication;
 
 const style = StyleSheet.create({
-    wrapper: {padding: 20},
     textTitle: {textAlign: 'center'}
 })

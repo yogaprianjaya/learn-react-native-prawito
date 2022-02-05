@@ -40,7 +40,7 @@ const BasicJavaScript = () => {
     }
 
     return (
-        <View style={style.wrapper}>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <Text style={style.textTitel}>Basic Java Script</Text>
             <Text>Nama : {nama}</Text>
             <Text>{sapaHewan(hewan)}</Text>
@@ -54,6 +54,5 @@ const BasicJavaScript = () => {
 export default BasicJavaScript;
 
 const style = StyleSheet.create({
-    wrapper: {padding: 20},
     textTitel: {textAlign: 'center'}
 })

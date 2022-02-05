@@ -3,7 +3,7 @@ import {View, Text, Image, TextInput} from 'react-native';
 
 const SampleComponent = () => {
   return (
-    <View>
+    <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
       <View style={{width: 80, height: 80, backgroundColor: 'red'}} />
       <Text>Hello !</Text>
       <Name />

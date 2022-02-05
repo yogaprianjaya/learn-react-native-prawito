@@ -74,7 +74,7 @@ const FlexBox = () => {
     // }, [subscriber]);
     
     return (
-        <View>
+        <View style={{borderColor: 'black', borderWidth: 1, margin: 20, padding: 20, borderRadius: 10}}>
             <View style={{flexDirection: 'row', backgroundColor: 'gray', alignItems: 'center'}}>
                 <View style={{backgroundColor: 'red', flex: 1, height: 50}} />
                 <View style={{backgroundColor: 'blue', flex: 2, height: 100}} />
